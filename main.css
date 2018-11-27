@@ -9,12 +9,20 @@
 }
 .contact-form {
   background: #fff;
+  box-sizing: border-box;
   width: 800px;
   height: 630px;
   border-radius:2px;
   margin: auto;
-  justify-content: center;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   box-shadow: 0 0 10px 0px #333;
+
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  -ms-flex-pack: justify;
 }
 .circle-object {
   background: #fff;
@@ -46,7 +54,7 @@
   height: 60px;
   margin-left: 300px;
   margin-top: -50px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   position: relative;
   z-index: 2;
 }
@@ -54,17 +62,12 @@
   font-family: Arial;
   font-weight: normal;
   font-size: 30px;
-  margin-top: -6px;
-  margin-bottom: -3.5px;
   position: relative;
   text-align: center;
 }
 .contact-form-text-block {
   width: 660px;
   margin-left: 70px;
-  margin-top: 50px;
-  margin-bottom: 0px;
-  padding: 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
