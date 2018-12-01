@@ -1,10 +1,9 @@
-.center-properties {
+.in-the-center-of-screen {
   background: #dedede;
-  width:100%;
-  height:100%;
-  margin:0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
   display: flex;
-
   display: -ms-flexbox;
 }
 .contact-form {
@@ -12,17 +11,18 @@
   box-sizing: border-box;
   width: 800px;
   height: 630px;
-  border-radius:2px;
+  border-radius: 2px;
   margin: auto;
+  padding-left: 70px;
+  padding-right: 70px;
   padding-bottom: 90px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 0 10px 0px #333;
-
   display: -ms-flexbox;
   -ms-flex-direction: column;
   -ms-flex-pack: justify;
+  box-shadow: 0 0 10px 0px #333;
 }
 .circle-object {
   background: #fff;
@@ -30,33 +30,21 @@
   height: 98px;
   border-radius: 50%;
   border: 1px solid #ebebeb;
-  margin: 0 auto;
-  margin-top: -100px;
+  margin: auto;
+  margin-top: -50px;
   background-image: url(letter.png);
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  z-index: 3;
 }
-.circle-for-shadow {
-  width: 100px;
-  height: 100px;
+.circle-object:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
   border-radius: 50%;
-  margin: 0 auto;
-  margin-top: -50px;
-  position: relative;
-  z-index: 1;
-  box-shadow: 0px 0px 10px 0px #333;
-}
-.rectangular-for-circle-shadow {
-  background-color: #fff;
-  width: 200px;
-  height: 60px;
-  margin-left: 300px;
-  margin-top: -50px;
-  margin-bottom: 30px;
-  position: relative;
-  z-index: 2;
+  box-shadow: 0px -2px 7px 0px #333;
+  z-index: -1;
 }
 .contact-form-title {
   font-family: Arial;
@@ -66,13 +54,10 @@
   text-align: center;
 }
 .contact-form-text-block {
-  width: 660px;
-  margin-left: 70px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
-
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
   -ms-flex-pack: end;
@@ -87,7 +72,7 @@
   height: 60px;
   margin-right: 10px;
   padding-left: 18px;
-  border-radius:2px;
+  border-radius: 2px;
   border: 1px solid #e7e7e7;
 }
 .contact-form-name:focus {
@@ -97,7 +82,7 @@
 .contact-form-email {
   font-family: Arial;
   font-size: 20px;
-  color: #333
+  color: #333;
   background: #fff;
   box-sizing: border-box;
   width: 320px;
@@ -105,8 +90,8 @@
   margin-bottom: 15px;
   margin-left: 10px;
   padding-left: 18px;
-  border-radius:2px;
-  border:1px solid #e7e7e7;
+  border-radius: 2px;
+  border: 1px solid #e7e7e7;
 }
 .contact-form-email:focus {
   outline: none;
@@ -115,15 +100,15 @@
 .contact-form-textarea {
   font-family: Arial;
   font-size: 16px;
-  color: #333
+  color: #333;
   background: #fff;
   box-sizing: border-box;
   width: 660px;
   height: 200px;
   margin-top: 15px;
   padding: 18px;
-  border-radius:2px;
-  border:1px solid #e7e7e7;
+  border-radius: 2px;
+  border: 1px solid #e7e7e7;
 }
 .contact-form-textarea:focus {
   outline: none;
@@ -133,14 +118,15 @@
   font-family: Arial;
   font-size: 18px;
   color: #fff;
-  background-color: #ff4b5a;
-  width: 100px;
+  background: #ff4b5a;
   height: 50px;
   margin-top: 30px;
+  padding-left: 29px;
+  padding-right: 29px;
   border: none;
   border-radius: 2px;
   cursor: pointer;
 }
 .contact-form-button-send:hover {
-  background-color: #333;
+  background: #333;
 }
